@@ -50,15 +50,19 @@ def pull_data(station_name, station_ID, year_start, year_end):
     print('Done.')
 
 if __name__ == "__main__":
-    """weather_data = PullData(31688, 2011, 2013)
+    # """weather_data = PullData(31688, 2011, 2013)
 
-    print(weather_data.head())
-    print(weather_data.tail())"""
+    # print(weather_data.head())
+    # print(weather_data.tail())"""
 
-    station_name = input('Input Station Name: ')
-    station_ID = input('Input Station ID: ')
-    year_start = input('Input Start Year: ')
-    year_end = input('Input End Year: ')
+    # station_name = input('Input Station Name: ')
+    # station_ID = input('Input Station ID: ')
+    # year_start = input('Input Start Year: ')
+    # year_end = input('Input End Year: ')
     
-    print('Pulling weather data from {} to {}'.format(year_start, year_end))
-    weather_data = pull_data(station_name, station_ID, year_start, year_end)
+    # print('Pulling weather data from {} to {}'.format(year_start, year_end))
+    weather_data = pull_data('Ottawa', 30578, 2003, 2019)
+    weather_data = pull_data('Toronto', 31688, 2003, 2019)
+    weather_data = pull_data('ThunderBay', 30682, 2003, 2019)
+    weather_data = pull_data('Waterloo', 48569, 2010, 2019)
+    weather_data = pull_data('Waterloo', 32008, 2003, 2009)
